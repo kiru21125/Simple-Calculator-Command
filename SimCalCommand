@@ -1,0 +1,23 @@
+s=input()
+j=0
+for i in range(0,len(s)):
+    if s[i]=='A' or s[i]=='a':
+        j=i
+        l=s[j+1::]
+        f=s[0:j]
+        print(int(f)+int(l))
+    elif s[i]=='S' or s[i]=='b':
+        j=i
+        l=s[j+1::]
+        f=s[0:j]
+        print(int(f)-int(l))
+    elif s[i]=='M' or s[i]=='m':
+        j=i
+        l=s[j+1::]
+        f=s[0:j]
+        print(int(f)*int(l))
+    elif s[i]=='D' or s[i]=='d':
+        j=i
+        l=s[j+1::]
+        f=s[0:j]
+        print(int(f)//int(l))
